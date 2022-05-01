@@ -1,12 +1,12 @@
 #Bulling generator
 import random
 import os
-directory_folder = r"C:\Users\User\bullinglogs\log.txt"+".txt"
-folder_path = os.path.dirname(r"C:\Users\User\bullinglogs\log.txt"+".txt") # Путь к папке с файлом
+directory_folder = r"%USERPROFILE%%\bullinglogs\log.txt"+".txt"
+folder_path = os.path.dirname(r"%%USERPROFILE%%\bullinglogs\log.txt"+".txt") # Путь к папке с файлом
 if not os.path.exists(folder_path): #Если пути не существует создаем его
  os.makedirs(folder_path)
-file = open(r"C:\Users\User\bullinglogs\log.txt", 'w')
-with open(r"C:\Users\User\bullinglogs\log.txt", 'w'):
+file = open(r"%%USERPROFILE%%\bullinglogs\log.txt", 'w')
+with open(r"%USERPROFILE%\bullinglogs\log.txt", 'w'):
     file.write("")
 kol = input("Количество фраз(Желательно 5-30): ")
 kol = int(kol) - 1
